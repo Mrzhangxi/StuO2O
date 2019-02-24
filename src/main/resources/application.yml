@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password:
+    url: jdbc:mysql://localhost/bso2o?useSSL=false&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+#  jpa:
+#    show-sql: true
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    check-template-location: true
+    suffix: .html
+    encoding: UTF-8
+    mode: html5
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
