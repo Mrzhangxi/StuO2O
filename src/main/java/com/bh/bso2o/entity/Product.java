@@ -1,9 +1,18 @@
 package com.bh.bso2o.entity;
 
+import lombok.Data;
+
+import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
+@Data
+@Entity
+@Table(name = "tb_product")
 public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
     private String productName;
     private String productDesc;
